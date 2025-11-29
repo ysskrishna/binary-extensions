@@ -54,7 +54,7 @@ uv run pytest tests/test_is_binary_extension.py
 
 If you want to add new binary extensions to the list:
 
-1. Edit `binaryextensions/_data.py`
+1. Edit `binary_extensions/_data.py`
 2. Add the extension (lowercase, without leading dot) to the `BINARY_EXTENSIONS` frozenset
 3. Add corresponding test cases in the test files
 4. Run the test suite to ensure everything passes

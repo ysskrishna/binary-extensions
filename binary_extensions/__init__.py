@@ -1,5 +1,5 @@
 import os.path
-from binaryextensions._data import BINARY_EXTENSIONS, BINARY_EXTENSIONS_LOWER
+from binary_extensions._data import BINARY_EXTENSIONS, BINARY_EXTENSIONS_LOWER
 
 __all__ = ["BINARY_EXTENSIONS", "BINARY_EXTENSIONS_LOWER", "is_binary_extension", "is_binary_path"]
 

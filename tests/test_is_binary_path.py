@@ -1,5 +1,5 @@
 import pytest
-from binaryextensions import is_binary_path
+from binary_extensions import is_binary_path
 from ._data import BINARY_PATHS, NON_BINARY_PATHS, HIDDEN_BINARY_PATHS, HIDDEN_NON_BINARY_PATHS
 
 

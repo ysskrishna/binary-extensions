@@ -1,5 +1,5 @@
 import pytest
-from binaryextensions import BINARY_EXTENSIONS
+from binary_extensions import BINARY_EXTENSIONS
 from ._data import BINARY_EXAMPLES
 
 

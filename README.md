@@ -33,7 +33,7 @@ uv add binary-extensions
 ### Check if an extension is binary
 
 ```python
-from binaryextensions import is_binary_extension
+from binary_extensions import is_binary_extension
 
 is_binary_extension("png")      # True
 is_binary_extension(".jpg")     # True (dot-aware)
@@ -44,7 +44,7 @@ is_binary_extension("txt")      # False
 ### Check if a file path has a binary extension
 
 ```python
-from binaryextensions import is_binary_path
+from binary_extensions import is_binary_path
 
 is_binary_path("image.png")                    # True
 is_binary_path("/path/to/file.JPG")            # True (case-insensitive)
@@ -56,7 +56,7 @@ is_binary_path(".DS_Store")                     # True (dotfile support)
 ### Access the list of binary extensions
 
 ```python
-from binaryextensions import BINARY_EXTENSIONS, BINARY_EXTENSIONS_LOWER
+from binary_extensions import BINARY_EXTENSIONS, BINARY_EXTENSIONS_LOWER
 
 # BINARY_EXTENSIONS is a frozenset of all known binary extensions
 print(len(BINARY_EXTENSIONS))  # Number of supported extensions
