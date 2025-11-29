@@ -5,17 +5,15 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Tests](https://github.com/ysskrishna/binary-extensions/actions/workflows/test.yml/badge.svg)
 
-Python port of the popular [binary-extensions](https://github.com/sindresorhus/binary-extensions) npm package: check, classify, and iterate over binary file extensions.
+Python port of [binary-extensions](https://github.com/sindresorhus/binary-extensions) npm package. Check if a file or extension is binary, and iterate over 250+ known binary file types including images, videos, archives, and executables.
 
 ## Features
 
-- ✅ Check if a file extension is binary
-- ✅ Check if a file path has a binary extension
-- ✅ Access to a comprehensive list of binary extensions
-- ✅ Case-insensitive matching
-- ✅ Handles extensions with or without leading dots
-- ✅ Type hints included
-- ✅ Zero dependencies
+- Immutable collection of hundreds of known binary file extensions  
+- Fast membership checks using `frozenset`  
+- Case-insensitive and dot-aware checks  
+- Works for both extensions and full file paths  
+- Zero dependencies, minimal overhead  
 
 ## Installation
 
@@ -36,10 +34,10 @@ uv add binary-extensions
 ```python
 from binaryextensions import is_binary_extension
 
-# Returns True for binary extensions
 is_binary_extension("png")      # True
-is_binary_extension(".jpg")     # True
+is_binary_extension(".jpg")     # True (dot-aware)
 is_binary_extension("PDF")      # True (case-insensitive)
+is_binary_extension("txt")      # False
 ```
 
 ### Check if a file path has a binary extension
@@ -47,10 +45,10 @@ is_binary_extension("PDF")      # True (case-insensitive)
 ```python
 from binaryextensions import is_binary_path
 
-# Returns True for binary files
 is_binary_path("image.png")                    # True
 is_binary_path("/path/to/file.JPG")            # True (case-insensitive)
 is_binary_path("document.pdf")                 # True
+is_binary_path("document.txt")                 # False
 ```
 
 ### Access the list of binary extensions

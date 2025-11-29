@@ -1,7 +1,7 @@
 [project]
 name = "binary-extensions"
 version = "1.0.0"
-description = "Python port of the popular binary-extensions npm package: check, classify, and iterate over binary file extensions."
+description = "Python port of binary-extensions npm package. Check if a file or extension is binary, and iterate over 250+ known binary file types including images, videos, archives, and executables."
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
@@ -40,6 +40,11 @@ keywords = [
 ]
 dependencies = []
 
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
+
 [project.urls]
 Homepage = "https://github.com/ysskrishna/binary-extensions"
 Repository = "https://github.com/ysskrishna/binary-extensions.git"
@@ -52,8 +57,5 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["binaryextensions"]
 
-[project.optional-dependencies]
-dev = [
-    "pytest>=8.3.5",
-]
+
 
