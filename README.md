@@ -13,6 +13,7 @@ Python port of [binary-extensions](https://github.com/sindresorhus/binary-extens
 - Fast membership checks using `frozenset`  
 - Case-insensitive and dot-aware checks  
 - Works for both extensions and full file paths  
+- Supports dotfiles (e.g., `.DS_Store`)  
 - Zero dependencies, minimal overhead  
 
 ## Installation
@@ -49,17 +50,22 @@ is_binary_path("image.png")                    # True
 is_binary_path("/path/to/file.JPG")            # True (case-insensitive)
 is_binary_path("document.pdf")                 # True
 is_binary_path("document.txt")                 # False
+is_binary_path(".DS_Store")                     # True (dotfile support)
 ```
 
 ### Access the list of binary extensions
 
 ```python
-from binaryextensions import BINARY_EXTENSIONS
+from binaryextensions import BINARY_EXTENSIONS, BINARY_EXTENSIONS_LOWER
 
 # BINARY_EXTENSIONS is a frozenset of all known binary extensions
 print(len(BINARY_EXTENSIONS))  # Number of supported extensions
 "png" in BINARY_EXTENSIONS     # True
 "txt" in BINARY_EXTENSIONS     # False
+
+# BINARY_EXTENSIONS_LOWER contains all extensions in lowercase
+# Useful for case-insensitive lookups without calling .lower() repeatedly
+"PNG" in BINARY_EXTENSIONS_LOWER  # True (case-insensitive)
 ```
 
 ## Supported Extensions
