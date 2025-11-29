@@ -27,5 +27,15 @@ def is_binary_path(file_path: str) -> bool:
         >>> is_binary_path("/path/to/file.JPG")
         True
     """
+    basename = os.path.basename(file_path)
     _, ext = os.path.splitext(file_path)
-    return ext.lstrip(".").lower() in BINARY_EXTENSIONS
+    
+    # Handle dotfiles (files starting with a dot that have no extension)
+    # e.g., .something where "something" is a binary extension
+    if not ext and basename.startswith(".") and len(basename) > 1:
+        # Treat the entire filename (without leading dot) as the extension
+        ext = basename[1:]
+    else:
+        ext = ext.lstrip(".")
+    
+    return ext.lower() in BINARY_EXTENSIONS
