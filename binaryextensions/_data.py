@@ -54,7 +54,7 @@ BINARY_EXTENSIONS = frozenset((
 	"dot",
 	"dotm",
 	"dra",
-	"ds_store",
+	"DS_Store",
 	"dsk",
 	"dts",
 	"dtshd",
@@ -262,3 +262,5 @@ BINARY_EXTENSIONS = frozenset((
 	"zip",
 	"zipx"
 ))
+
+BINARY_EXTENSIONS_LOWER = frozenset(ext.lower() for ext in BINARY_EXTENSIONS)

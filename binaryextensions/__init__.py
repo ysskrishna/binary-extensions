@@ -1,7 +1,7 @@
 import os.path
-from binaryextensions._data import BINARY_EXTENSIONS
+from binaryextensions._data import BINARY_EXTENSIONS, BINARY_EXTENSIONS_LOWER
 
-__all__ = ["BINARY_EXTENSIONS", "is_binary_extension", "is_binary_path"]
+__all__ = ["BINARY_EXTENSIONS", "BINARY_EXTENSIONS_LOWER", "is_binary_extension", "is_binary_path"]
 
 def is_binary_extension(ext: str) -> bool:
     """
@@ -13,7 +13,7 @@ def is_binary_extension(ext: str) -> bool:
         >>> is_binary_extension(".txt")
         False
     """
-    return ext.lower().lstrip(".") in BINARY_EXTENSIONS
+    return ext.lower().lstrip(".") in BINARY_EXTENSIONS_LOWER
 
 def is_binary_path(file_path: str) -> bool:
     """
@@ -38,4 +38,4 @@ def is_binary_path(file_path: str) -> bool:
     else:
         ext = ext.lstrip(".")
     
-    return ext.lower() in BINARY_EXTENSIONS
+    return ext.lower() in BINARY_EXTENSIONS_LOWER
