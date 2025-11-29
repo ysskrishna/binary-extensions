@@ -54,7 +54,7 @@ BINARY_EXTENSIONS = frozenset((
 	"dot",
 	"dotm",
 	"dra",
-	"DS_Store",
+	"ds_store",
 	"dsk",
 	"dts",
 	"dtshd",
