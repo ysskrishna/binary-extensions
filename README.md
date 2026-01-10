@@ -3,8 +3,10 @@
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ysskrishna/binary-extensions/blob/main/LICENSE)
 ![Tests](https://github.com/ysskrishna/binary-extensions/actions/workflows/test.yml/badge.svg)
+[![PyPI](https://img.shields.io/pypi/v/binary-extensions)](https://pypi.org/project/binary-extensions/)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/binary-extensions?period=total&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/binary-extensions)
 
-Python port of [binary-extensions](https://github.com/sindresorhus/binary-extensions) npm package. Check if a file or extension is binary, and iterate over 250+ known binary file types including images, videos, archives, and executables.
+Check if a file or extension is binary, and iterate over 250+ known binary file types including images, videos, archives, and executables. Python port of [binary-extensions](https://github.com/sindresorhus/binary-extensions) npm package.
 
 ## Features
 
@@ -84,6 +86,11 @@ The package includes support for hundreds of binary file extensions, including:
 ## Credits
 
 This package is a Python port of the [binary-extensions](https://github.com/sindresorhus/binary-extensions) npm package by [Sindre Sorhus](https://github.com/sindresorhus).
+
+
+## Changelog
+
+See [CHANGELOG.md](https://github.com/ysskrishna/binary-extensions/blob/main/CHANGELOG.md) for a detailed list of changes and version history.
 
 ## Contributing
 
