@@ -1,7 +1,7 @@
 [project]
 name = "binary-extensions"
 version = "1.0.0"
-description = "Python port of binary-extensions npm package. Check if a file or extension is binary, and iterate over 250+ known binary file types including images, videos, archives, and executables."
+description = "Check if a file or extension is binary, and iterate over 250+ known binary file types including images, videos, archives, and executables. Python port of binary-extensions npm package."
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
