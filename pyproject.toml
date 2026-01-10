@@ -1,6 +1,6 @@
 [project]
 name = "binary-extensions"
-version = "1.0.0"
+version = "1.0.1"
 description = "Check if a file or extension is binary, and iterate over 250+ known binary file types including images, videos, archives, and executables. Python port of binary-extensions npm package."
 readme = "README.md"
 requires-python = ">=3.8"
@@ -36,7 +36,9 @@ keywords = [
     "binary-detection",
     "file-utils",
     "utilities",
-    "utils"
+    "utils",
+    "mit license",
+    "ysskrishna"
 ]
 dependencies = []
 
@@ -49,6 +51,8 @@ dev = [
 Homepage = "https://github.com/ysskrishna/binary-extensions"
 Repository = "https://github.com/ysskrishna/binary-extensions.git"
 Issues = "https://github.com/ysskrishna/binary-extensions/issues"
+Changelog = "https://github.com/ysskrishna/binary-extensions/blob/main/CHANGELOG.md"
+Discussions = "https://github.com/ysskrishna/binary-extensions/discussions"
 
 [build-system]
 requires = ["hatchling"]
