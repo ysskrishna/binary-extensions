@@ -69,11 +69,50 @@ print(len(BINARY_EXTENSIONS))  # Number of supported extensions
 "PNG" in BINARY_EXTENSIONS_LOWER  # True (case-insensitive)
 ```
 
+## API Reference
+
+Install with `pip install binary-extensions` and import from `binary_extensions`. Signatures and descriptions below match the source code of `binary_extensions`.
+
+### `BINARY_EXTENSIONS`
+
+Constant: `frozenset` with 262 entries.
+
+### `BINARY_EXTENSIONS_LOWER`
+
+Constant: `frozenset` with 262 entries.
+
+### `is_binary_extension(ext: str) -> bool`
+
+Return True if the given file extension is known to be binary.
+
+**Example**
+
+```python
+from binary_extensions import is_binary_extension
+
+is_binary_extension("png")  # True
+is_binary_extension(".txt")  # False
+```
+
+### `is_binary_path(file_path: str) -> bool`
+
+Return True if the file path has a binary file extension.
+
+**Example**
+
+```python
+from binary_extensions import is_binary_path
+
+is_binary_path("image.png")  # True
+is_binary_path("document.txt")  # False
+is_binary_path("/path/to/file.JPG")  # True
+```
+
 ## Supported Extensions
 
 The package includes support for hundreds of binary file extensions, including:
 
-- **Images**: png, jpg, gif, bmp, webp, svg, ico, and more
+- **Images**: png, jpg, gif, bmp, webp, ico, and more
 - **Audio**: mp3, wav, flac, aac, ogg, and more
 - **Video**: mp4, avi, mkv, mov, webm, and more
 - **Archives**: zip, tar, gz, 7z, rar, and more
