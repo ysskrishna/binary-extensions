@@ -5,6 +5,8 @@
 ![Tests](https://github.com/ysskrishna/binary-extensions/actions/workflows/test.yml/badge.svg)
 [![PyPI](https://img.shields.io/pypi/v/binary-extensions)](https://pypi.org/project/binary-extensions/)
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/binary-extensions?period=total&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/binary-extensions)
+[![Context7](https://img.shields.io/badge/Context7-docs-18181B)](https://context7.com/ysskrishna/binary-extensions)
+[![Ask DeepWiki](https://img.shields.io/badge/DeepWiki-ask-18181B)](https://deepwiki.com/ysskrishna/binary-extensions)
 
 Check if a file or extension is binary, and iterate over 250+ known binary file types including images, videos, archives, and executables. Python port of [binary-extensions](https://github.com/sindresorhus/binary-extensions) npm package.
 
