@@ -1,0 +1,29 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "binary-extensions",
+  "description": "Zero-dependency Python library to check whether a file extension or path is binary, with a frozenset of 250+ known binary extensions. Python port of the binary-extensions npm package.",
+  "excludeFolders": [
+    "archive",
+    "archived",
+    "old",
+    "deprecated",
+    "legacy",
+    "tests",
+    ".github"
+  ],
+  "excludeFiles": [
+    "CHANGELOG.md",
+    "changelog.md",
+    "LICENSE.md",
+    "license.md",
+    "CODE_OF_CONDUCT.md",
+    "NEWS.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "AGENTS.md"
+  ],
+  "rules": [
+    "Import from binary_extensions: is_binary_extension, is_binary_path, BINARY_EXTENSIONS, BINARY_EXTENSIONS_LOWER.",
+    "is_binary_extension accepts the extension with or without a leading dot and ignores case; it only checks the name, never file contents."
+  ]
+}
